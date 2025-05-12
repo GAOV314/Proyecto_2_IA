@@ -49,7 +49,7 @@ file_paths = glob.glob("docs/*.txt")
 if not file_paths:
     raise RuntimeError("No se encontraron archivos .txt en la carpeta docs/")
 
-# Configuramos splitter sólo para archivos distintos de gran_texto.txt
+
 splitter = CharacterTextSplitter(chunk_size=200, chunk_overlap=0)
 all_chunks = []
 
@@ -57,7 +57,7 @@ for path in file_paths:
     filename = os.path.basename(path)
     print(f"Procesando: {filename}")
 
-    if filename == "gran_texto.txt":
+    if filename == "80 registros.txt":
         
         with open(path, "r", encoding="utf8") as f:
             for i, line in enumerate(f, start=1):
