@@ -17,9 +17,9 @@ Aplicación web con Streamlit + LangChain/OpenAI + Pinecone para responder pregu
 ```
 
 ## Configuración
-1. python -m venv venv
-   source venv/bin/activate   # Linux/macOS
-   venv\Scripts\activate    # Windows Powershell
+1. - python -m venv venv
+   - source venv/bin/activate   # Linux/macOS
+   - venv\Scripts\activate    # Windows Powershell
 2. `cp .env.example .env` y completar claves.
 3. `pip install -r requirements.txt`
 
